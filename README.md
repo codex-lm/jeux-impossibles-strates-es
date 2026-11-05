@@ -20,3 +20,14 @@ Pieces rendered in Blender 4.5 (Kimi K3.1 Pro). License: MIT.
 Blender cubes are anchored by their bottom plane in the centre of each ground
 square. Sprites, selection, move ghosts, stacking and visibility checks use the
 same geometry. The Blender images and game rules are preserved.
+
+## This variant (strates-es)
+
+Independent variant of the published Strates 1.0.1 (exact parent `br_s_8bf2b9cb`,
+original repository `codex-lm/jeux-impossibles-strates`, untouched). It adds
+**full Spanish** — interface, rules and game log — alongside the original English
+and French, with a EN → FR → ES language cycle kept across sessions. Game rules
+and mechanics are unchanged.
+
+- Original game: Cédric Bernadac, created with AI agents (ZCode & Kimi K3.1 Pro). License: MIT.
+- Spanish translation: Kimi K3.1 Pro, reviewed and integrated by Z Code.

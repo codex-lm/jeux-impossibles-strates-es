@@ -751,12 +751,137 @@ var STR = {
       '<p>Le plus petit identifiant devient <span class="azurC">Azur</span> et héberge l’arbitrage&nbsp;: seul son navigateur détient le volume complet, valide les coups et ne diffuse jamais l’état nu — à <span class="corailC">Corail</span> ne parviennent que ses propres cubes, les cubes adverses visibles depuis le Sud, les hauteurs publiques et la tomographie active. L’hôte reste un <b>arbitre technique</b>&nbsp;: son navigateur connaît physiquement l’état complet, la discrétion est donc de mise — mais rien d’invisible ne lui est jamais envoyé, et la victoire n’est proclamée que par lui.</p>' +
       '<div class="pourquoi">Pourquoi impossible avant l’informatique&nbsp;: l’occultation équitable — chacun ne voit que depuis son côté — exige un écran ; sur une maquette physique, on triche en changeant d’angle.</div>'
   }
+,es:{
+  'doc.titre': 'STRATES — Hex en 3D con gravedad y cavernas ocultas',
+  'tagline': 'Hex en 3D, con gravedad y cavernas ocultas',
+  'btn.nouvelle': 'Nueva partida',
+  'btn.regles': 'Reglas',
+  'btn.texturesAuto': 'Texturas: automáticas',
+  'btn.texturesOff': 'Texturas: desactivadas',
+  'tex.titre': 'Aplicar las texturas de la carpeta assets/ cuando el manifiesto esté presente (activable y desactivable)',
+  'tex.manquant': 'No se encontró assets/manifest.js junto al juego — renderizado vectorial.',
+  'tex.aucun': 'No se encontraron recursos (assets/manifest.js) — renderizado vectorial.',
+  'tex.on': 'Texturas aplicadas (cuando están disponibles).',
+  'tex.off': 'Texturas desactivadas — vectorial puro.',
+  'btn.quitterSalon': 'Salir de la sala',
+  'btn.miner': 'Extraer este cubo',
+  'btn.annuler': 'Cancelar',
+  'btn.vue': 'Cambiar de vista',
+  'btn.rejouer': 'Jugar otra vez',
+  'btn.examiner': 'Inspeccionar el tablero',
+  'btn.fermer': 'Cerrar',
+  'btn.voir': 'Ver mi tablero',
+  'btn.retourAccueil': 'Volver al inicio',
+  'minimap.legende': 'alturas — información pública',
+  'hud.win.A': 'Victoria — <span class="azurC">Azur</span>',
+  'hud.win.C': 'Victoria — <span class="corailC">Corail</span>',
+  'hud.tour.A': 'Turno de <span class="azurC">Azur</span>',
+  'hud.tour.C': 'Turno de <span class="corailC">Corail</span>',
+  'hud.tourIA': 'Turno de <span class="corailC">la IA (Corail)</span>',
+  'hud.demiTour': 'Medio turno {n}',
+  'hud.modeIA': ' — contra la IA ({n})',
+  'hud.modeLigne': ' — en línea, eres {j}',
+  'hud.reserve': '{j} — reserva: <b>{n}</b> cubos',
+  'hud.scanActif': 'Tomografía ACTIVA — radiografía del estrato z={z}',
+  'hud.scanDans': 'Tomografía en {n} medio turno{s}',
+  'hud.vue': 'Vista: desde {cote} (caras: {faces})',
+  'cote.A': 'el oeste', 'cote.C': 'el sur',
+  'faces.A': 'oeste y sur', 'faces.C': 'sur y este',
+  'but.A': 'unir el oeste (x=0) con el este (x=3)',
+  'but.C': 'unir el sur (y=0) con el norte (y=3)',
+  'niveau.facile': 'fácil', 'niveau.normal': 'normal',
+  'barre.fin': 'Fin de la partida — inspecciona libremente ambos puntos de vista.',
+  'barre.attente': 'Turno del rival — solo cambia su vista visible; espera…',
+  'barre.ia': 'La IA está pensando…',
+  'barre.selection': 'Mueve este cubo a un fantasma cobrizo — o extráelo (volverá a tu reserva).',
+  'barre.aide': 'COLOCAR: haz clic en el suelo o en la <i>parte superior</i> de una columna &nbsp;·&nbsp; MOVER: haz clic en tu cubo (cara lateral) &nbsp;·&nbsp; EXTRAER: doble clic, tecla M o botón',
+  'pass.sur': 'Pasa el dispositivo',
+  'pass.detail': 'Debes {but} con una cadena de cubos que se tocan por las caras. Tu cámara es fija, desde {cote}: ves las caras {faces}, nada más.',
+  'pass.vide': 'El tablero está vacío — Azur empieza.',
+  'pass.scan': 'Tomografía este turno: el estrato z={z} será radiografiado, incluso a través de los cubos.',
+  'vic.sur': 'Fin de la partida',
+  'vic.nom.A': 'Victoria: Azur',
+  'vic.nom.C': 'Victoria: Corail',
+  'vic.lien.A': 'Azur une el oeste con el este',
+  'vic.lien.C': 'Corail une el sur con el norte',
+  'vic.detail': '{lien} con una cadena de cubos que se tocan por las caras — tras {n} medios turnos.',
+  'vic.simul': 'Conexiones simultáneas: gana el jugador activo.',
+  'vic.note': 'La oclusión desempeñó su papel hasta el final.',
+  'ia.badge': 'La IA está pensando…',
+  'toast.ia': 'Eres Azur — la IA ({n}) juega con Corail desde el sur. Tu cubo inicial ya está colocado.',
+  'toast.aucunDep': 'No hay ningún movimiento legal — todavía puedes extraer este cubo.',
+  'toast.reserveVide': 'Reserva agotada.',
+  'toast.colonnePleine': 'Columna llena (altura {n}).',
+  'toast.cubeAdverse': 'Este cubo pertenece al adversario.',
+  'toast.scan': 'Tomografía — estrato z={z} revelado durante este turno.',
+  'plateau.coupe': 'corte z={z}',
+  'accueil.sur': 'Bienvenido al cañón',
+  'accueil.detail': 'Hex en 3D, con gravedad y cavernas ocultas.<br>Elige tu duelo.',
+  'accueil.iaBtn': 'Jugar contra la IA<span class="sousBtn">Eres Azur, la máquina es Corail (Normal) — honesta: solo ve desde su propio lado.</span>',
+  'accueil.localBtn': 'Dos jugadores — misma pantalla<span class="sousBtn">El duelo original: pasa el dispositivo entre turnos.</span>',
+  'accueil.facileBtn': 'Contra la IA — Fácil<span class="sousBtn">Realiza aproximadamente un 60% de movimientos legales aleatorios.</span>',
+  'accueil.ligneBtn': 'En línea — sala LOB7<span class="sousBtn">Dos navegadores unidos en una sala LOB7 compartida (lob7.com).</span>',
+  'accueil.regle': 'Leer las reglas',
+  'salon.sur': 'Sala LOB7',
+  'salon.connexion': 'Conectando con la sala…',
+  'salon.note': 'El identificador más pequeño se convierte en Azur — anfitrión y árbitro técnico del volumen.',
+  'salon.relie': 'Sala LOB7 conectada — esperando a un adversario…',
+  'salon.id': 'Tu identificador de duelo: {id}… (el más pequeño se convierte en Azur)',
+  'deco.sur': 'Sala interrumpida',
+  'deco.nom': 'Partida interrumpida',
+  'deco.note': 'No se transmitió nada más allá de las vistas legítimas — las cavernas siguen huecas.',
+  'net.impossible': 'Modo en línea no disponible: {m}.',
+  'net.horsLob7': 'fuera de LOB7 — abre este archivo dentro de una sala LOB7 (lob7.com), no directamente',
+  'net.injoignable': 'sala inaccesible ({c})',
+  'net.perdu': 'conexión con la sala perdida ({c})',
+  'net.annonce': 'no se pudo anunciar la presencia en la sala',
+  'net.muets': 'el adversario ya no responde',
+  'net.quitte': 'el adversario salió de la sala',
+  'net.refus': 'Movimiento rechazado por el árbitro: {m}. Resincronizando…',
+  'net.revanche': 'El adversario propone una revancha — nueva partida.',
+  'net.m.inconnu': 'acción desconocida',
+  'net.m.tour': 'no es tu turno',
+  'net.m.pose': 'colocación ilegal',
+  'net.m.deplace': 'movimiento ilegal',
+  'net.m.mine': 'extracción ilegal',
+  'net.m.illegal': 'ilegal',
+  'net.envoye': 'Movimiento enviado al árbitro…',
+  'net.azur': 'Eres Azur — anfitrión y árbitro del volumen. Tú empiezas.',
+  'net.corail': 'Eres Corail — Azur (anfitrión-árbitro) empieza.',
+  'net.aToi': 'Tu turno.',
+  'net.aToiScan': 'Tu turno — tomografía z={z} este turno.',
+  'net.nouvelle': 'Nueva partida — Azur empieza.',
+  'net.demande': 'Solicitud de revancha enviada al anfitrión…',
+  'regles.corps': '<h2>STRATES</h2>' +
+    '<p style="color:rgba(243,229,208,.6)">Hex en 3D con gravedad y cavernas ocultas — un duelo por turnos: dos jugadores en la misma pantalla, contra la IA o en línea en una sala LOB7.</p>' +
+    '<h3>El tablero</h3>' +
+    '<p>Una base de <b>4×4</b>; cada columna admite hasta <b>4 cubos</b>, siempre llena desde el suelo, sin huecos (gravedad estricta). Cada jugador tiene <b>16 cubos</b> en reserva; el tablero empieza vacío. <span class="azurC">Azur</span> empieza.</p>' +
+    '<h3>Una acción por turno</h3>' +
+    '<p><b>1. COLOCAR</b> — un cubo de tu reserva en la parte superior de una columna (si la altura &lt; 4). Haz clic en una casilla del suelo o en la <i>parte superior</i> de una columna.</p>' +
+    '<p><b>2. MOVER</b> — uno de <b>tus</b> cubos a una columna adyacente (±x o ±y): aterriza en la parte superior. Ascenso máximo: <b>1 nivel</b> (parte superior de destino ≤ altura del cubo); descenso libre. La columna de origen se compacta: lo que estaba encima vuelve a caer. Haz clic en tu cubo (cara lateral) y luego en un <span style="color:var(--cuivre)">fantasma</span> cobrizo.</p>' +
+    '<p><b>3. EXTRAER</b> — retira uno de <b>tus</b> cubos, incluso si está enterrado: vuelve a tu reserva y la columna se compacta un nivel — los cubos enemigos caen. Un arma táctica. Haz doble clic en tu cubo, pulsa <b>M</b> o usa el botón «Extraer».</p>' +
+    '<h3 class="azurC">Victoria — Hex vertical</h3>' +
+    '<p><span class="azurC">Azur</span> une la cara <b>oeste</b> (x=0) con la cara <b>este</b> (x=3); <span class="corailC">Corail</span> une el <b>sur</b> (y=0) con el <b>norte</b> (y=3), mediante una cadena de cubos que se tocan por las caras — adyacencia en <b>6 direcciones</b> (±x, ±y, ±z). Se comprueba tras cada acción, incluidos los derrumbes. Conexiones simultáneas: gana el jugador activo.</p>' +
+    '<h3>Oclusión — el corazón del juego</h3>' +
+    '<p>Cada jugador ve el tablero desde <b>su propio</b> lado, con una cámara isométrica <b>fija</b>: Azur desde el oeste, Corail desde el sur. Un cubo bajo oculto tras una columna alta es <b>invisible</b>: la emboscada es legal. No hay rotación libre. Entre turnos, la pantalla de paso «Pasa el dispositivo» protege ambas vistas.</p>' +
+    '<h3>Tomografía</h3>' +
+    '<p>Cada <b>8 medios turnos</b>, un estrato horizontal aleatorio (z = 0 a 3) se somete a una <b>radiografía</b> durante todo el turno: sus cubos — incluso los ocultos — aparecen en una superposición translúcida que deja ver a través. Pública y momentánea.</p>' +
+    '<h3>Minimapa</h3>' +
+    '<p>Arriba a la derecha: la cuadrícula vista desde arriba con la <b>altura</b> física de cada columna — información pública. Los colores, sin embargo, solo se ven desde tu propio lado.</p>' +
+    '<h3>Modos de juego</h3>' +
+    '<p><b>Misma pantalla</b> — el duelo original, con una pantalla de paso «Pasa el dispositivo» entre turnos. <b>Contra la IA</b> — eres <span class="azurC">Azur</span>, la máquina es <span class="corailC">Corail</span>: <i>Fácil</i> realiza aproximadamente un 60&nbsp;% de movimientos legales aleatorios, <i>Normal</i> evalúa cada acción legal con una estrategia voraz (conectar, bloquear, preservar). <b>En línea — sala LOB7</b> — dos navegadores unidos en una sala compartida de lob7.com.</p>' +
+    '<h3>La IA es honesta</h3>' +
+    '<p>Conoce sus propios cubos en todas partes, pero solo tiene en cuenta los cubos de <span class="azurC">Azur</span> cuando son <b>visibles desde su cámara</b> (el sur) o <b>revelados por una tomografía</b> durante su turno — nunca una posición oculta. Por tanto, a veces razona sobre un tablero más pobre que el real: ese es el precio de la honestidad.</p>' +
+    '<h3>En línea — nota de honestidad</h3>' +
+    '<p>El identificador más pequeño se convierte en <span class="azurC">Azur</span> y aloja el arbitraje: solo ese navegador posee el volumen completo, valida los movimientos y nunca difunde el estado bruto — <span class="corailC">Corail</span> solo recibe sus propios cubos, los cubos enemigos visibles desde el sur, las alturas públicas y la tomografía activa. El anfitrión sigue siendo un <b>árbitro técnico</b>: su navegador conoce físicamente el estado completo, así que la discreción está de rigor — pero nunca se le envía nada invisible, y la victoria la proclama únicamente el anfitrión.</p>' +
+    '<div class="pourquoi">Por qué era imposible antes de la informática: la oclusión justa — cada jugador solo ve desde su propio lado — requiere una pantalla; en una maqueta física, se hace trampa al cambiar el ángulo.</div>'
+}
 };
 
 var LANG = 'en';
 try {
   var lgBoot = sessionStorage.getItem('strates-lang');
-  if (lgBoot === 'fr' || lgBoot === 'en') LANG = lgBoot;
+  if (lgBoot === 'fr' || lgBoot === 'en' || lgBoot === 'es') LANG = lgBoot;
 } catch (e) { /* stockage indisponible (file:// strict) : reste en anglais */ }
 
 function T(key, args) {
@@ -778,14 +903,14 @@ function appliquerI18N() {
   }
   liste = document.querySelectorAll('[data-i-title]');
   for (i = 0; i < liste.length; i++) liste[i].title = T(liste[i].getAttribute('data-i-title'));
-  $('btnLangue').textContent = (LANG === 'en' ? 'FR' : 'EN');
-  $('btnLangueAccueil').textContent = (LANG === 'en' ? 'FR' : 'EN');
+  $('btnLangue').textContent = (LANG === 'en' ? 'FR' : (LANG === 'fr' ? 'ES' : 'EN'));
+  $('btnLangueAccueil').textContent = (LANG === 'en' ? 'FR' : (LANG === 'fr' ? 'ES' : 'EN'));
   $('btnTextures').innerHTML = T(Assets.actif ? 'btn.texturesAuto' : 'btn.texturesOff');
   $('btnTextures').title = Assets.manifestAbsent ? T('tex.manquant') : T('tex.titre');
 }
 
 function changerLangue(lg) {
-  if (lg !== 'en' && lg !== 'fr') return;
+  if (lg !== 'en' && lg !== 'fr' && lg !== 'es') return;
   LANG = lg;
   try { sessionStorage.setItem('strates-lang', LANG); } catch (e) { /* silencieux */ }
   appliquerI18N();
@@ -1944,7 +2069,7 @@ function brancherEntrees() {
   $('regles').addEventListener('click', function (ev) {
     if (ev.target === $('regles')) $('regles').classList.add('cache');
   });
-  $('btnLangue').addEventListener('click', function () { changerLangue(LANG === 'en' ? 'fr' : 'en'); });
+  $('btnLangue').addEventListener('click', function () { changerLangue(LANG === 'en' ? 'fr' : (LANG === 'fr' ? 'es' : 'en')); });
   $('btnTextures').addEventListener('click', function () {
     if (Assets.manifestAbsent && !Object.keys(Assets.entrees).length) {
       toast(T('tex.aucun'));
@@ -2364,7 +2489,7 @@ function brancherModeles() {
   $('choixIAFacile').addEventListener('click', function () { MODE = 'ia'; IA_NIVEAU = 'facile'; partirJouer(); });
   $('choixLigne').addEventListener('click', tenterEnLigne);
   $('btnReglesAccueil').addEventListener('click', function () { $('regles').classList.remove('cache'); });
-  $('btnLangueAccueil').addEventListener('click', function () { changerLangue(LANG === 'en' ? 'fr' : 'en'); });
+  $('btnLangueAccueil').addEventListener('click', function () { changerLangue(LANG === 'en' ? 'fr' : (LANG === 'fr' ? 'es' : 'en')); });
   $('btnQuitterSalon').addEventListener('click', quitterSalon);
   $('btnQuitterSalon2').addEventListener('click', quitterSalon);
   $('btnRetourAccueil').addEventListener('click', function () {
